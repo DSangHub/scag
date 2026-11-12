@@ -3,6 +3,6 @@
   "private":true,
   "version":"7.0.0",
   "type":"module",
-  "scripts":{"dev":"vite","build":"vite build","api":"node api/server.js","db:init":"node api/init-db.js"},
+  "scripts":{"dev":"vite","build":"vite build","api":"node server.js","db:init":"node init-db.js"},
   "dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","react":"latest","react-dom":"latest","lucide-react":"latest","express":"^4.21.0","cors":"^2.8.5","pg":"^8.13.0"}
 }
