@@ -1,1 +1,8 @@
-{"name":"scag-teen-mvp","private":true,"version":"2.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"latest","react":"latest","react-dom":"latest","lucide-react":"latest"},"devDependencies":{}}
+{
+  "name":"scag-teen-platform",
+  "private":true,
+  "version":"7.0.0",
+  "type":"module",
+  "scripts":{"dev":"vite","build":"vite build","api":"node api/server.js","db:init":"node api/init-db.js"},
+  "dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","react":"latest","react-dom":"latest","lucide-react":"latest","express":"^4.21.0","cors":"^2.8.5","pg":"^8.13.0"}
+}

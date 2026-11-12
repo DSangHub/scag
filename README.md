@@ -1,20 +1,28 @@
-# SCAG Teen MVP v2
-Same School. New Era.
+# SCAG Teen Platform
+Complete GitHub-ready architecture with React, Node/Express, and PostgreSQL.
 
-## What is included
-- React/Vite front-end
-- 13+ safety-oriented UX
-- Four creative eras: Medieval, Roman, Renaissance, Future
-- Photo upload/local preview
-- Role/look selection
-- Copilot graphics integration placeholder
-- School-friends chat prototype
-- Block/report/moderation UX notes
-- Responsive desktop/mobile layout
+## Included
+- 13+ registration and login
+- Persistent profiles and social-link JSON field
+- School selection, demo email-domain verification, manual-review queue
+- Verified school-friend discovery and friend-request endpoint
+- Conversation and persistent-message endpoints
+- Four-era Photo Lab: Medieval, Roman, Renaissance, Future
+- Persistent AI creation jobs
+- Placeholder endpoints for AI generation and text/image safety
+- Safety-report persistence
+- Docker Compose PostgreSQL
 
-## Run
-npm install
-npm run dev
+## Run locally
+1. `docker compose up -d`
+2. `npm install`
+3. Export environment values from `.env.example`.
+4. `npm run db:init`
+5. Terminal A: `npm run api`
+6. Terminal B: `npm run dev`
 
-## Production integrations still required
-This prototype does not claim to implement production identity verification, school verification, AI image generation, content moderation, database persistence, or real-time messaging. Those require backend/API integrations and legal/privacy review for a 13+ service.
+## Demo verification
+The seeded school domains end in `.example`, so they are fictional. Use a matching fictional email domain to exercise the verified path in local testing. All other accounts enter manual review.
+
+## Production warning
+Before a public 13+ launch, replace demo verification and placeholder AI/safety handlers with vetted providers and workflows. Add rate limiting, secure cookie/session strategy, account recovery, consent and privacy controls, moderator tooling, audit logs, data retention/deletion processes, file scanning, and legal review for every launch jurisdiction.

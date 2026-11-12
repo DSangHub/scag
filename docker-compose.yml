@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: scag
+      POSTGRES_USER: scag_user
+      POSTGRES_PASSWORD: change_me
+    ports: ["5432:5432"]
+    volumes: ["scag_data:/var/lib/postgresql/data"]
+volumes:
+  scag_data:
