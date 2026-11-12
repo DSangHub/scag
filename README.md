@@ -1,13 +1,20 @@
-# SCAG MVP
-Stay Connected After Graduating.
+# SCAG Teen MVP v2
+Same School. New Era.
 
-## Run locally
-1. Install Node.js.
-2. Run `npm install`.
-3. Run `npm run dev`.
+## What is included
+- React/Vite front-end
+- 13+ safety-oriented UX
+- Four creative eras: Medieval, Roman, Renaissance, Future
+- Photo upload/local preview
+- Role/look selection
+- Copilot graphics integration placeholder
+- School-friends chat prototype
+- Block/report/moderation UX notes
+- Responsive desktop/mobile layout
 
-## GitHub / hosting
-Upload the contents of this folder to a GitHub repository. It is a Vite React project. Use `npm run build` for a production build.
+## Run
+npm install
+npm run dev
 
-## Current scope
-This repository contains the working front-end MVP prototype. Authentication, a production database, identity/school verification, persistent messaging, moderation, and server APIs are the next backend phase.
+## Production integrations still required
+This prototype does not claim to implement production identity verification, school verification, AI image generation, content moderation, database persistence, or real-time messaging. Those require backend/API integrations and legal/privacy review for a 13+ service.
